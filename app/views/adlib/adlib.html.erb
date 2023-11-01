@@ -1,0 +1,12 @@
+<h1>Adlib Story Generator</h1>
+<%= form_for :adlib, url: adlib_generate_path, method: :post do |f| %>
+  <p>
+    <%= f.text_field :noun, placeholder: 'Noun' %>
+    <%= f.text_field :verb, placeholder: 'Verb' %>
+    <%= f.text_field :adjective, placeholder: 'Adjective' %>
+    <%= f.text_field :adverb, placeholder: 'Adverb' %>
+  </p>
+  <p>
+    <%= f.submit 'Generate Story' %>
+  </p>
+<% end %>
